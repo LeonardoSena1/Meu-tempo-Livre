@@ -1,0 +1,28 @@
+body{
+    font-family: Verdana;
+    background-color: rgb(24, 21, 21);
+    color: white;
+    text-transform: uppercase;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    top: 250px; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+span::before{
+    content: "";
+    animation: words 20s infinite;
+    color: yellow;
+}
+
+@keyframes words {
+    0% {content: "Vou programar";}
+    25% {content: "vou cozinhar";}
+    50% {content: "vou Correr";}
+    75% {content: "Vou estudar";}
+    100% {content: "Vou jogar video game";} 
+}
